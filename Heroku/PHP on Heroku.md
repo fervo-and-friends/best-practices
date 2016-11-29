@@ -23,4 +23,4 @@
 * Read this: https://devcenter.heroku.com/articles/getting-started-with-symfony#best-practices
 * Read this: https://blog.fervo.se/blog/2016/03/22/symfony-on-heroku/
 * Use Symfony >=3.2 which has native support for environment variables
-* Enable Dyno Metadata and use that to determine if you should trust the front router
+* [Enable Dyno Metadata](https://devcenter.heroku.com/articles/dyno-metadata) and use that to determine if you should trust the front router
