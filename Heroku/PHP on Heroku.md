@@ -24,6 +24,7 @@
 * Read this: https://blog.fervo.se/blog/2016/03/22/symfony-on-heroku/
 * Use Symfony >=3.2 which has native support for environment variables
 * [Enable Dyno Metadata](https://devcenter.heroku.com/articles/dyno-metadata) and use that to determine if you should trust the front router
+* Use [ReleasePhaseMigrationsBundle](https://github.com/fervo/ReleasePhaseMigrationsBundle) to do release phase migrations with advisory locks.
 
 ## Symfony on Heroku behind Cloudflare
 
