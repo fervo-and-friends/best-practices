@@ -6,8 +6,10 @@
 * Useful buildpacks:
   * https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt
   * https://github.com/kollegorna/heroku-buildpack-autossh
-* If you need to manipulate enviornment variables, [do it in .profile](https://devcenter.heroku.com/articles/dynos#the-profile-file)
+* If you need to manipulate (rename, split etc.) enviornment variables, [do it in .profile](https://devcenter.heroku.com/articles/dynos#the-profile-file)
   * You can parse URLs using only bash with this: http://wp.vpalos.com/537/uri-parsing-using-bash-built-in-features/
+* Remember that you can often attach addons to multiple apps
+* Remember that you can (using heroku-cli) create addons with other names, or rename addons
 
 ## PHP on Heroku in general
 
@@ -30,4 +32,4 @@
 
 ## Symfony on Heroku behind Cloudflare
 
-* Be mindful that Cloudflare doesn't use X-Forwarded-Proto to report wheter it's using SSL. If you're using "Full SSL", it's not a problem, but if you're using "Flexible SSL" ([which you shouldn't](http://webmasters.stackexchange.com/a/67946)), where the connection between Heroku and Cloudflare is not encrypted, Symfony will consider your request unsecure.
+* Be mindful that Cloudflare doesn't use X-Forwarded-Proto to report wheter it's using SSL. If you're using "Full SSL", it's not a problem, but if you're using "Flexible SSL" ([which you shouldn't](http://webmasters.stackexchange.com/a/67946)), where the connection between Heroku and Cloudflare is not encrypted, Symfony will consider your request insecure.
