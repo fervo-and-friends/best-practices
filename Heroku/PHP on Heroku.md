@@ -6,6 +6,8 @@
 * Useful buildpacks:
   * https://elements.heroku.com/buildpacks/heroku/heroku-buildpack-apt
   * https://github.com/kollegorna/heroku-buildpack-autossh
+* If you need to manipulate enviornment variables, [do it in .profile](https://devcenter.heroku.com/articles/dynos#the-profile-file)
+  * You can parse URLs using only bash with this: http://wp.vpalos.com/537/uri-parsing-using-bash-built-in-features/
 
 ## PHP on Heroku in general
 
