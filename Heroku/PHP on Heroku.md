@@ -33,3 +33,7 @@
 ## Symfony on Heroku behind Cloudflare
 
 * Be mindful that Cloudflare doesn't use X-Forwarded-Proto to report wheter it's using SSL. If you're using "Full SSL", it's not a problem, but if you're using "Flexible SSL" ([which you shouldn't](http://webmasters.stackexchange.com/a/67946)), where the connection between Heroku and Cloudflare is not encrypted, Symfony will consider your request insecure.
+
+## Heroku CI
+
+* PHPUnit removed support for TAP in 6.0. [gh640/phpunit-tap](https://github.com/gh640/phpunit-tap) adds it back.
