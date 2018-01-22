@@ -39,3 +39,4 @@
 * PHPUnit removed support for TAP in 6.0. [gh640/phpunit-tap](https://github.com/gh640/phpunit-tap) adds it back.
 * PHPSpec has support for TAP built in.
 * Behat doesn't come with TAP support, use [rdey/BehatTapFormatter](https://github.com/rdey/BehatTapFormatter) to add it.
+* If you use multiple testing tools, you should write a shell script to run as your test script. If so, starting the script with `set -e` may be useful. `set -e` means that if any of the lines in the script fail (i.e. return a non-zero exit code) the entire script will immediately abort with a non-zero exit code (triggering Heroku CI to mark the test run as failed).
