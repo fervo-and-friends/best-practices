@@ -37,3 +37,5 @@
 ## Heroku CI
 
 * PHPUnit removed support for TAP in 6.0. [gh640/phpunit-tap](https://github.com/gh640/phpunit-tap) adds it back.
+* PHPSpec has support for TAP built in.
+* Behat doesn't come with TAP support, use [rdey/BehatTapFormatter](https://github.com/rdey/BehatTapFormatter) to add it.
